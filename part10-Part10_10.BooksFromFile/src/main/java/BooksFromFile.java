@@ -20,7 +20,11 @@ public class BooksFromFile {
                 .lines(Paths.get(file))
                 .map(l -> l.split(","))
                 .filter(s -> s.length == 4)
-                .map(s -> new Book(s[0], Integer.parseInt(s[1]), Integer.parseInt(s[2]), s[3]))
+                .map(s -> new Book(
+                        s[0], 
+                        Integer.parseInt(s[1]), 
+                        Integer.parseInt(s[2]), 
+                        s[3]))
                 .collect(Collectors.toList());
     }
 
