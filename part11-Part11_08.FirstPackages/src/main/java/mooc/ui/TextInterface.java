@@ -9,7 +9,7 @@ package mooc.ui;
  *
  * @author other21
  */
-public class TextInterface implements UserInterface {
+public class TextInterface implements UserInterface{
 
     @Override
     public void update() {
