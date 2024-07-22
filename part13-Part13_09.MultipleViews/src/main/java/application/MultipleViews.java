@@ -12,10 +12,14 @@ import javafx.stage.Stage;
 public class MultipleViews extends Application{
 
     public static void main(String[] args) {
-//        Application.launch(UserInterface.class);
-        launch(MultipleViews.class);
+        Application.launch(UserInterface.class);
+//        launch(MultipleViews.class);
     }
 
+    /**
+     * Method only for passing the tests, preferably use created UserInterface class to launch UI
+     * @param window 
+     */
     @Override
     public void start(Stage window) {
         window.setTitle("Three views application!");
